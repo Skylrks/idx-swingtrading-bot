@@ -11,37 +11,42 @@
 An advanced AI-powered trading analysis system that uses **20 specialized agents** working collaboratively to analyze IDX stocks and generate professional trading signals — complete with entry price, stop loss, take profit, and confidence score.
 
 ## 🏗️ Architecture
-20-AGENT CREWAI SYSTEM
-│
-├── LAYER 1 — DATA COLLECTION (5 agents)
-│   ├── Market Data Specialist
-│   ├── Fundamental Data Extractor
-│   ├── News & Sentiment Analyst
-│   ├── Social Media Monitor
-│   └── Foreign Flow Tracker
-│
-├── LAYER 2 — TECHNICAL ANALYSIS (5 agents)
-│   ├── Trend & Momentum Analyst
-│   ├── Momentum & Oscillator Specialist
-│   ├── Volume & Bandarmology Expert
-│   ├── Support & Resistance Mapper
-│   └── Chart Pattern Recognition
-│
-├── LAYER 3 — INTELLIGENCE (4 agents)
-│   ├── Bull Case Analyst
-│   ├── Bear Case Analyst
-│   ├── Macro & IHSG Analyst
-│   └── Sector Rotation Analyst
-│
-├── LAYER 4 — DECISION (3 agents)
-│   ├── Debate Moderator (Bull vs Bear)
-│   ├── Signal Synthesizer
-│   └── Confidence Scorer
-│
-└── LAYER 5 — RISK & EXECUTION (3 agents)
-├── Chief Risk Officer
-├── Position Sizing Specialist
-└── Execution Commander → Telegram
+```mermaid
+graph TD
+    User[👤 User Input: Kode Saham] --> Crew[🤖 CrewAI Orchestrator]
+    
+    Crew --> L1[📥 LAYER 1: DATA COLLECTION]
+    L1 --> A1[Market Data Specialist]
+    L1 --> A2[Fundamental Extractor]
+    L1 --> A3[News Analyst]
+    L1 --> A4[Social Media Monitor]
+    L1 --> A5[Foreign Flow Tracker]
+    
+    A1 & A2 & A3 & A4 & A5 --> L2[📈 LAYER 2: TECHNICAL ANALYSIS]
+    L2 --> A6[Trend & Momentum]
+    L2 --> A7[Oscillator Specialist]
+    L2 --> A8[Bandarmology Expert]
+    L2 --> A9[Support & Resistance]
+    L2 --> A10[Pattern Recognition]
+    
+    A6 & A7 & A8 & A9 & A10 --> L3[🧠 LAYER 3: INTELLIGENCE]
+    L3 --> A11[🐂 Bull Case Analyst]
+    L3 --> A12[🐻 Bear Case Analyst]
+    L3 --> A13[Macro & IHSG Analyst]
+    L3 --> A14[Sector Rotation Analyst]
+    
+    A11 & A12 & A13 & A14 --> L4[⚖️ LAYER 4: DECISION]
+    L4 --> A15[Debate Moderator]
+    L4 --> A16[Signal Synthesizer]
+    L4 --> A17[Confidence Scorer]
+    
+    A15 & A16 & A17 --> L5[🎯 LAYER 5: RISK & EXECUTION]
+    L5 --> A18[Chief Risk Officer]
+    L5 --> A19[Position Sizer]
+    L5 --> A20[Execution Commander]
+    
+    A20 --> Telegram[📱 Telegram Signal]
+```
 
 ## ✨ Features
 
